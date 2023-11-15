@@ -1,0 +1,90 @@
+*{box-sizing: border-box;}
+body{
+    margin:0px;
+    background-color:whitesmoke;
+}
+.navi{
+    background-color: rgba(69, 75, 76, 0.87);
+    padding: 10px;
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+.brand{
+    display:inline-block;
+    flex-grow: 8;
+    color: antiquewhite;
+    margin:10px;
+    padding: 5px;
+    width:20%;
+}
+.nav-list{
+    flex-grow: 2;
+    list-style: none;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.li{
+    display:block;
+    margin: 10px;
+    padding:5px;
+}
+.selection{
+    text-decoration: none;
+    color:antiquewhite;
+}
+.selection:hover{
+    text-decoration: underline;
+}
+.myname{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.blogs{
+    display: block;
+    width:70%;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 15%;
+    background-color:bisque;
+}
+h2{
+    text-align: center;
+}
+.blog-img{
+    width: 80%;
+    align-items: center;
+    border-radius: 25px;
+}
+.blog-post{
+    margin:20px;
+    padding:15px;
+    border-bottom: 2px solid whitesmoke;
+}
+.title{
+    font-size: 25px;
+    text-align: center;
+}
+.container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    height: 700px;
+}
+.login-box{
+    display: block;
+    padding:40px;
+    background-color: rgba(69, 75, 76, 0.87);
+    color:bisque;
+    width:fit-content;
+    border-radius: 15px;
+    display:flex;
+    flex-direction:column;
+}
+.inp{
+    margin:5px;
+}
+.btn{
+    margin:5px;
+}

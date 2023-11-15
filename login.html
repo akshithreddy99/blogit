@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form name="loginForm">
+            <div class="login-box">
+            <center><h1>Blog it!</h1></center>
+                <input class="inp" placeholder="Email" type="text" name="email">
+                <input class="inp" placeholder="Password" type="password" name="pass">
+                <button class="btn">Login</button>
+                <p color="bisque">Dont have an account? <a class="selection" href="./about.html"><i>Create an account</i></a></p>
+            </div>
+        </form>
+    </div>
+</body>
+<script>
+    function validateEmail()
+    {
+        var emailID = document.loginForm.email.value;
+        atpos = emailID.indexOf("@");
+        dotpos = emailID.lastIndexOf(".");
+        if (atpos <1 || ( dotpos - atpos < 2 ))
+        {
+            alert("Please enter correct email ID")
+            document.myForm.EMail.focus() ;
+            return false;
+        }
+        return( true );
+    }
+</script>
+</html>
